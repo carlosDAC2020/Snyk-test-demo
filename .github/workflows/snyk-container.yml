@@ -9,7 +9,8 @@ on:
     - cron: '19 1 * * 4'
 
 permissions:
-  contents: write
+  contents: read
+  security-events: write
 
 jobs:
   snyk:
