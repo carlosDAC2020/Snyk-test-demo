@@ -31,7 +31,7 @@ jobs:
         SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
       with:
         image: your/image-to-test
-        args: --file=dockerfile --sarif-file-output=snyk.sarif .
+        args: --file=dockerfile --sarif-file-output=snyk.sarif 
     - name: List files in the directory
       run: ls -alh
     - name: Upload result to GitHub Code Scanning
